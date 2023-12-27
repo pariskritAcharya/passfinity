@@ -4,7 +4,11 @@ in the occasion of Viveka Codecamp,2024.
 
 This is a password manager respontible for generating password,qr codes, saving and managing passwords, checking strength of password. 
 
-This github repo has a zip file of the project. To run the project you need to install godot engine from https://godotengine.org/
+
+project rar format:
+https://drive.google.com/file/d/1CgjnWwqg5-BlfHPl4typ9279hyuUy0o8/view?usp=drive_link
+
+To run the project you need to install godot engine from https://godotengine.org/
 please make sure you download 4.2.x version.
 
 After that, extract the zip file. It contains all the files related to this project.
