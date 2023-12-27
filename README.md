@@ -11,3 +11,6 @@ After that, extract the zip file. It contains all the files related to this proj
 To run the project first open godot engine. Then import project>> select project.godot
 The project will run after some wait.
 You can see codes and assets used while making this app.
+
+
+You can download the app from: https://cyber-nivio.itch.io/passfinity
