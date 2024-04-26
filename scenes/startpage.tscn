@@ -1,0 +1,66 @@
+[gd_scene load_steps=6 format=3 uid="uid://bnptf6f6rwkic"]
+
+[ext_resource type="Script" path="res://scenes/startpage.gd" id="1_45jpg"]
+[ext_resource type="Texture2D" uid="uid://b3cgsbl4wxig8" path="res://asserts/UI/uiElements/app_login_empty_bar.PNG" id="2_vns3u"]
+[ext_resource type="Texture2D" uid="uid://dxb301bfb8tcs" path="res://asserts/UI/additional_assets/submit_button_neutral.PNG" id="3_8unf3"]
+[ext_resource type="FontFile" uid="uid://dsbbefbco6we6" path="res://asserts/fonts/Josefin_Sans/static/JosefinSans-BoldItalic.ttf" id="3_plqa4"]
+[ext_resource type="Texture2D" uid="uid://cjimt81j31xlc" path="res://asserts/UI/additional_assets/submit_button_pressed.PNG" id="4_euqgk"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_45jpg")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.882353, 0.882353, 0.882353, 1)
+
+[node name="login bar" type="Sprite2D" parent="."]
+position = Vector2(576, 324)
+texture = ExtResource("2_vns3u")
+
+[node name="Label" type="Label" parent="."]
+modulate = Color(1, 0.337255, 0.419608, 1)
+layout_mode = 2
+offset_left = 376.0
+offset_top = 224.0
+offset_right = 793.0
+offset_bottom = 278.0
+theme_override_font_sizes/font_size = 50
+text = "Passfinity"
+
+[node name="password" type="LineEdit" parent="."]
+modulate = Color(0.333333, 0.32549, 0.329412, 1)
+layout_mode = 2
+offset_left = 416.0
+offset_top = 304.0
+offset_right = 746.0
+offset_bottom = 352.0
+theme_override_fonts/font = ExtResource("3_plqa4")
+theme_override_font_sizes/font_size = 25
+placeholder_text = "Enter password"
+clear_button_enabled = true
+flat = true
+caret_blink = true
+secret = true
+
+[node name="enter" type="TextureButton" parent="."]
+layout_mode = 2
+offset_left = 464.0
+offset_top = 368.0
+offset_right = 928.0
+offset_bottom = 533.0
+scale = Vector2(0.5, 0.5)
+texture_normal = ExtResource("3_8unf3")
+texture_pressed = ExtResource("4_euqgk")
+
+[connection signal="pressed" from="enter" to="." method="_on_enter_pressed"]

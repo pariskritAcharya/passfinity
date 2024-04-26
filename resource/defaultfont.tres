@@ -1,0 +1,9 @@
+[gd_resource type="FontVariation" load_steps=2 format=3 uid="uid://bid8284ucusbk"]
+
+[ext_resource type="FontFile" uid="uid://diqyrab5lv45d" path="res://asserts/fonts/fonts/Akira Expanded Demo.otf" id="1_r6dyl"]
+
+[resource]
+base_font = ExtResource("1_r6dyl")
+opentype_features = {
+1667329140: 0
+}
